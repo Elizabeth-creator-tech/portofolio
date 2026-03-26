@@ -295,7 +295,7 @@ h1, h2, h3, h4, .gradient-text {
 .counter-item p { color: var(--text-secondary); font-weight: 500; }
 
 /* Sections Common */
-section { padding: 10rem 0; position: relative; z-index: 2; }
+section { padding: 5rem 0; position: relative; z-index: 2; }
 
 .section-tag {
     color: var(--primary);
@@ -529,20 +529,76 @@ h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem; letter-spacing: -
 .reveal { opacity: 1; transform: none; transition: none; }
 .reveal.active { opacity: 1; transform: none; }
 
-/* Responsive Adjustments */
+/* Responsive — Tablet */
 @media (max-width: 1024px) {
-    .grid-2, .grid-4, .about-grid, .projects-grid, .contact-box { grid-template-columns: 1fr; gap: 2.5rem; }
+    .grid-2, .grid-4, .about-grid, .projects-grid { grid-template-columns: 1fr; gap: 2rem; }
     .hero-info h1 { font-size: 3rem; }
-    .contact-box { padding: 4rem 2rem; gap: 3rem; }
+    .contact-box { grid-template-columns: 1fr; padding: 3rem 2rem; gap: 2.5rem; }
+    .section-desc { font-size: 1.2rem; }
+    h2 { font-size: 2.5rem; }
 }
 
+/* Responsive — Mobile */
 @media (max-width: 768px) {
-    section { padding: 6rem 0; }
+    /* Navigation */
     .nav-links, .nav-actions { display: none; }
-    h2 { font-size: 2.2rem; }
-    .hero-info h1 { font-size: 2.5rem; text-align: center; }
-    .hero-desc { margin: 0 auto 2rem; text-align: center; }
-    .hero-btns { justify-content: center; flex-direction: column; width: 100%; }
-    .btn { width: 100%; justify-content: center; padding: 1rem; font-size: 1rem; }
-    .stat-float { display: none; } /* Clearer mobile hero */
+    .navbar { padding: 1rem 0; }
+
+    /* Typography */
+    h1 { font-size: 2rem !important; line-height: 1.2; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.2rem; }
+    .section-desc { font-size: 1rem; }
+    .hero-desc { font-size: 1rem; }
+
+    /* Layout */
+    .container { padding: 0 1.25rem; }
+    section { padding: 4rem 0; }
+    .hero-section { padding-top: 7rem; padding-bottom: 3rem; }
+
+    /* Hero */
+    .hero-info { text-align: center; }
+    .hero-desc { margin: 0 auto 2rem; text-align: center; max-width: 100%; }
+    .hero-badge { font-size: 0.75rem; margin-bottom: 1rem; }
+    .hero-btns { flex-direction: column; width: 100%; }
+    .btn { width: 100%; justify-content: center; padding: 1rem; font-size: 0.95rem; }
+    .stat-float { display: none; }
+    .visual-card { max-width: 100%; margin: 2rem auto 0; }
+
+    /* About Cards */
+    .about-grid { grid-template-columns: 1fr; gap: 1.5rem; margin-top: 3rem; }
+    .about-card { padding: 2rem; }
+
+    /* Project Cards */
+    .projects-grid { grid-template-columns: 1fr; gap: 1.5rem; margin-top: 3rem; }
+    .p-content { padding: 2rem; }
+    .p-content h3 { font-size: 1.3rem; }
+    .p-img-wrapper { height: 150px; }
+    .p-img-wrapper i { font-size: 3.5rem; }
+
+    /* Arsenal */
+    .arsenal-flex { gap: 1rem; margin-top: 2rem; }
+    .arsenal-item { padding: 1rem 1.5rem; font-size: 0.85rem; width: 100%; }
+
+    /* Contact */
+    .contact-box { padding: 2.5rem 1.5rem; gap: 2rem; grid-template-columns: 1fr; }
+    .contact-info h2 { font-size: 2rem; }
+    .contact-info p { font-size: 1rem; margin-bottom: 1.5rem; }
+
+    /* Stats */
+    .stats-counter { padding: 3rem 0; }
+    .counter-item h2 { font-size: 2rem; }
+
+    /* Footer */
+    .footer { padding: 3rem 0; }
+    .footer .flex-between { flex-direction: column; gap: 1.5rem; text-align: center; }
+}
+
+/* Responsive — Small Phones */
+@media (max-width: 400px) {
+    h1 { font-size: 1.6rem !important; }
+    h2 { font-size: 1.4rem; }
+    .contact-box { padding: 2rem 1rem; }
+    .about-card { padding: 1.5rem; }
+    .p-content { padding: 1.5rem; }
 }
