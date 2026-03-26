@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Elizabeth Murabula</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="interior-page">
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <header class="scrolled">
+        <div class="container">
+            <nav style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+                <a href="index.html" class="logo">ELIZABETH<span>.</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Work</a></li>
+                    <li><a href="Contact.html" class="active">Contact</a></li>
+                    <li><a href="Experience.html">Experience</a></li>
+                    <li><a href="Ethics.html">Ethics</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 4rem 0;">
+        <section class="reveal active">
+            <div class="section-header" style="text-align: left;">
+                <div class="badge"><i class="fas fa-paper-plane"></i> Get in Touch</div>
+                <h1 style="font-size: 3rem; margin-top: 1rem;">Let's <span class="gradient-text">Collaborate.</span></h1>
+                <p style="max-width: 600px;">Available for professional consultations, security audits, and collaborative investigations.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; margin-top: 4rem;">
+                <div class="project-card" style="padding: 3rem;">
+                    <h3>Contact Information</h3>
+                    <div style="margin-top: 2rem; display: grid; gap: 1.5rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 40px; height: 40px; background: var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-envelope" style="color: var(--primary);"></i>
+                            </div>
+                            <span>murabula@investigator.com</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 40px; height: 40px; background: var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fab fa-linkedin" style="color: var(--primary);"></i>
+                            </div>
+                            <span>linkedin.com/in/elizabeth-murabula</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 40px; height: 40px; background: var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-location-dot" style="color: var(--primary);"></i>
+                            </div>
+                            <span>Nairobi, Kenya</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: var(--card-bg); padding: 3rem; border-radius: 24px; border: 1px solid var(--border);">
+                    <form id="contact-form">
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">Your Name</label>
+                            <input type="text" placeholder="John Doe" style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid var(--border); background: var(--bg-color); color: white; outline: none;">
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">Email Address</label>
+                            <input type="email" placeholder="john@example.com" style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid var(--border); background: var(--bg-color); color: white; outline: none;">
+                        </div>
+                        <div style="margin-bottom: 2rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">Message</label>
+                            <textarea rows="4" placeholder="How can I help you?" style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid var(--border); background: var(--bg-color); color: white; outline: none;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 4rem 0; background: var(--bg-color); border-top: 1px solid var(--border);">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
+                <a href="index.html" class="logo">ELIZABETH<span>.</span></a>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                    &copy; 2026 Elizabeth Murabula. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
