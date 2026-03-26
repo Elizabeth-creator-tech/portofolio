@@ -319,7 +319,7 @@ h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem; letter-spacing: -
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 
 .about-card {
@@ -369,7 +369,7 @@ h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem; letter-spacing: -
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 
 .p-card {
