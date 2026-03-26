@@ -3,227 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elizabeth Murabula | DFIR Specialist & Security Engineer</title>
-    
-    <!-- Meta Tags for SEO -->
-    <meta name="description" content="Portfolio of Elizabeth Murabula, a specialist in Digital Forensics, Incident Response, and Cyber Security.">
-    <meta name="keywords" content="DFIR, Digital Forensics, Incident Response, Cyber Security, Elizabeth Murabula">
+    <title>Elizabeth Murabula | DFIR & Cybersecurity Specialist</title>
+    <meta name="description" content="Professional portfolio of Elizabeth Murabula, specializing in Digital Forensics, Incident Response, and Cyber Security.">
     
     <!-- External Resources -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!-- Background Effects -->
-    <div class="bg-blobs">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-    </div>
+    <!-- Premium Background Effects -->
+    <div class="main-glow"></div>
+    <div class="bg-noise"></div>
 
-    <!-- Header & Navigation -->
-    <header>
-        <div class="container">
-            <nav style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
-                <a href="#" class="logo">ELIZABETH<span>.</span></a>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container flex-between">
+            <a href="#" class="brand">ELIZABETH<span class="dot">.</span></a>
+            <nav>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#work">Projects</a></li>
                     <li><a href="Experience.html">Experience</a></li>
                     <li><a href="Ethics.html">Ethics</a></li>
                 </ul>
-                <div class="btn-group" style="margin-left: 2rem;">
-                    <a href="CV.html" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
-                        <i class="fas fa-file-invoice"></i> CV
-                    </a>
-                </div>
             </nav>
+            <div class="nav-actions">
+                <a href="CV.html" class="nav-btn">
+                    <i class="fas fa-file-pdf"></i> Resume
+                </a>
+            </div>
         </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-grid">
-                    <div class="hero-content">
-                        <div class="reveal">
-                            <div class="badge">
-                                <i class="fas fa-shield-halved"></i> Digital Forensics Specialist
+        <section class="hero-section">
+            <div class="container grid-2">
+                <div class="hero-info reveal">
+                    <div class="hero-badge">
+                        <span class="pulse"></span> Cybersecurity Attachee
+                    </div>
+                    <h1>Elizabeth <span class="gradient-text">Murabula.</span></h1>
+                    <p class="hero-desc">
+                        A dedicated Cybersecurity and Forensics student with a passion for ethical hacking and digital investigations. Committed to securing cyberspace and uncovering digital truths as a professional attachee.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#work" class="btn btn-main">Explore My Work <i class="fas fa-chevron-right"></i></a>
+                        <a href="#contact" class="btn btn-outline">Contact Me <i class="fas fa-paper-plane"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="visual-card">
+                        <img src="images/photo.jpg" alt="Elizabeth Murabula" class="hero-img">
+                        <div class="stat-float stat-1">
+                            <i class="fas fa-shield-virus"></i>
+                            <div>
+                                <span>Analysis</span>
+                                <strong>50+ Samples</strong>
                             </div>
-                            <h1>Investigating the <span class="gradient-text">Digital Truth.</span></h1>
-                            <p class="subheadline">
-                                Solving complex cyber incidents through systematic forensic analysis and rapid response. Committed to integrity, accuracy, and legal excellence.
-                            </p>
-                            <div class="btn-group">
-                                <a href="#projects" class="btn btn-primary">
-                                    <i class="fas fa-eye"></i> View Cases
-                                </a>
-                                <a href="#contact" class="btn btn-secondary">
-                                    <i class="fas fa-paper-plane"></i> Get in Touch
-                                </a>
+                        </div>
+                        <div class="stat-float stat-2">
+                            <i class="fas fa-gavel"></i>
+                            <div>
+                                <span>Integrity</span>
+                                <strong>ISO 27037</strong>
                             </div>
                         </div>
                     </div>
-                    <div class="hero-visual reveal">
-                        <div class="profile-img-container">
-                            <img src="images/photo.jpg" alt="Elizabeth Murabula" class="profile-img">
-                        </div>
-                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter -->
+        <section class="stats-counter reveal">
+            <div class="container grid-4">
+                <div class="counter-item">
+                    <h2 class="gradient-text">100%</h2>
+                    <p>Evidence Admissibility</p>
+                </div>
+                <div class="counter-item">
+                    <h2 class="gradient-text">24/7</h2>
+                    <p>Monitoring Capabilities</p>
+                </div>
+                <div class="counter-item">
+                    <h2 class="gradient-text">3+</h2>
+                    <p>Core Frameworks</p>
+                </div>
+                <div class="counter-item">
+                    <h2 class="gradient-text">0</h2>
+                    <p>Security Breaches</p>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="reveal">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Professional Overview</h2>
-                    <p>Merging technical precision with investigative rigor.</p>
-                </div>
-                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                    <p style="font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 2rem;">
-                        As a DFIR specialist, I bridge the gap between technical complexity and legal clarity. My focus is on preserving evidence integrity while delivering deep insights into security incidents, from data breaches to financial fraud.
-                    </p>
-                    <div class="skills-container">
-                        <div class="skill-pill"><i class="fas fa-file-signature"></i> Evidence Preservation</div>
-                        <div class="skill-pill"><i class="fas fa-magnifying-glass"></i> Malicious Artifact Analysis</div>
-                        <div class="skill-pill"><i class="fas fa-clock-rotate-left"></i> Timeline Reconstruction</div>
-                        <div class="skill-pill"><i class="fas fa-scale-balanced"></i> Legal Compliance</div>
+        <section id="about" class="about-section">
+            <div class="container text-center reveal">
+                <div class="section-tag">About Me</div>
+                <h2>Securing the <span class="gradient-text">Future</span> of Finance.</h2>
+                <p class="section-desc">
+                    As a cybersecurity specialist with a focus on Digital Forensics, I bridge the gap between technical complexity and investigative rigor. Mine is a journey of precision, ethics, and relentless pursuit of digital clarity.
+                </p>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <i class="fas fa-magnifying-glass"></i>
+                        <h3>Investigation</h3>
+                        <p>Deep-dive analysis of disk, memory, and network artifacts to reconstruct timelines.</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Automation</h3>
+                        <p>Developing custom Python tools for rapid evidence triage and security monitoring.</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-scale-balanced"></i>
+                        <h3>Ethics</h3>
+                        <p>Strict adherence to ACPO and NIST standards for defensible forensic findings.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="reveal">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Case Studies & Projects</h2>
-                    <p>Documented security investigations and system implementations.</p>
+        <!-- Featured Projects -->
+        <section id="work" class="projects-section">
+            <div class="container reveal">
+                <div class="section-header-alt">
+                    <div>
+                        <div class="section-tag">Portfolio</div>
+                        <h2>Recent investigations</h2>
+                    </div>
+                    <p>A selection of projects demonstrating technical depth and methodical execution.</p>
                 </div>
+
                 <div class="projects-grid">
-                    <!-- Project 1: Malware Analysis -->
-                    <div class="project-card">
-                        <div class="project-img-wrapper">
-                            <img src="images/malware.png" alt="Malware Analysis" class="project-img">
+                    <!-- Case 1 -->
+                    <div class="p-card">
+                        <div class="p-img-wrapper">
+                            <img src="images/malware.png" alt="Malware Analysis">
+                            <div class="p-overlay">
+                                <span class="p-tag">DFIR</span>
+                            </div>
                         </div>
-                        <div class="project-icon"><i class="fas fa-virus-slash"></i></div>
-                        <h3 class="project-title">Malware Analysis</h3>
-                        <p class="project-desc">Reverse-engineered executable samples to uncover behavior patterns and detection signatures for novel threat actors.</p>
-                        <div class="project-tags">
-                            <span class="tag">Static Analysis</span>
-                            <span class="tag">IDA Pro</span>
-                            <span class="tag">Reporting</span>
+                        <div class="p-content">
+                            <div class="p-icon ic-virus"><i class="fas fa-virus-slash"></i></div>
+                            <h3>Malware Triage</h3>
+                            <p>Reverse-engineered executable samples to uncover behavior patterns and command-and-control signatures.</p>
+                            <ul class="p-stack">
+                                <li>IDA Pro</li>
+                                <li>Volatility</li>
+                                <li>PEStudio</li>
+                            </ul>
                         </div>
-                        <a href="#" class="project-link">View Analysis <i class="fas fa-arrow-right"></i></a>
                     </div>
 
-                    <!-- Project 2: Medical Exchange -->
-                    <div class="project-card">
-                        <div class="project-img-wrapper">
-                            <img src="images/medical.png" alt="Medical Exchange System" class="project-img">
+                    <!-- Case 2 -->
+                    <div class="p-card">
+                        <div class="p-img-wrapper">
+                            <img src="images/medical.png" alt="Medical Exchange">
+                            <div class="p-overlay">
+                                <span class="p-tag">Development</span>
+                            </div>
                         </div>
-                        <div class="project-icon"><i class="fas fa-hospital-user"></i></div>
-                        <h3 class="project-title">Medical Exchange System</h3>
-                        <p class="project-desc">A secure, encrypted web portal built for inter-hospital patient data sharing with strict access controls and audit logging.</p>
-                        <div class="project-tags">
-                            <span class="tag">Secure Dev</span>
-                            <span class="tag">Encryption</span>
-                            <span class="tag">HIPAA</span>
+                        <div class="p-content">
+                            <div class="p-icon ic-med"><i class="fas fa-hospital-user"></i></div>
+                            <h3>Medical Data Exchange</h3>
+                            <p>Designed a secure, HIPAA-compliant portal for inter-hospital patient information sharing with advanced encryption.</p>
+                            <ul class="p-stack">
+                                <li>Secure Coding</li>
+                                <li>AES-256</li>
+                                <li>Vault</li>
+                            </ul>
                         </div>
-                        <a href="#" class="project-link">View Portal <i class="fas fa-arrow-right"></i></a>
                     </div>
 
-                    <!-- Project 3: Penetration Testing -->
-                    <div class="project-card">
-                        <div class="project-img-wrapper">
-                            <img src="images/pentesting.png" alt="Web app Penetration Test" class="project-img">
+                    <!-- Case 3 -->
+                    <div class="p-card">
+                        <div class="p-img-wrapper">
+                            <img src="images/pentesting.png" alt="Pentesting">
+                            <div class="p-overlay">
+                                <span class="p-tag">Auditing</span>
+                            </div>
                         </div>
-                        <div class="project-icon"><i class="fas fa-user-secret"></i></div>
-                        <h3 class="project-title">Web app Penetration Test</h3>
-                        <p class="project-desc">OWASP-based security assessment of a financial portal, identifying critical vulnerabilities and recommending mitigation steps.</p>
-                        <div class="project-tags">
-                            <span class="tag">Burp Suite</span>
-                            <span class="tag">OWASP</span>
-                            <span class="tag">FinSec</span>
+                        <div class="p-content">
+                            <div class="p-icon ic-lock"><i class="fas fa-user-secret"></i></div>
+                            <h3>FinSec Pentest</h3>
+                            <p>Conducted a comprehensive OWASP Top 10 assessment on a financial management portal, identifying critical flaws.</p>
+                            <ul class="p-stack">
+                                <li>Burp Suite</li>
+                                <li>Nmap</li>
+                                <li>Metasploit</li>
+                            </ul>
                         </div>
-                        <a href="#" class="project-link">View Report <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Technical arsenal Section -->
-        <section class="reveal">
+        <!-- Arsenal Section -->
+        <section class="arsenal-section reveal">
             <div class="container">
-                <div class="section-header">
-                    <h2>Technical Arsenal</h2>
-                    <p>Expertise in industry-leading tools and methodologies.</p>
-                </div>
-                <div class="skills-container">
-                    <div class="skill-pill"><i class="fas fa-terminal"></i> Autopsy</div>
-                    <div class="skill-pill"><i class="fas fa-cube"></i> FTK Imager</div>
-                    <div class="skill-pill"><i class="fas fa-network-wired"></i> Wireshark</div>
-                    <div class="skill-pill"><i class="fas fa-microscope"></i> Volatility</div>
-                    <div class="skill-pill"><i class="fas fa-code"></i> Python/Shell</div>
-                    <div class="skill-pill"><i class="fas fa-database"></i> SQL Forensics</div>
+                <h3 class="text-center">Technical Arsenal</h3>
+                <div class="arsenal-flex">
+                    <div class="arsenal-item"><i class="fab fa-python ic-py"></i> Python</div>
+                    <div class="arsenal-item"><i class="fas fa-terminal ic-sh"></i> Bash</div>
+                    <div class="arsenal-item"><i class="fas fa-microscope ic-au"></i> Autopsy</div>
+                    <div class="arsenal-item"><i class="fas fa-network-wired ic-ws"></i> Wireshark</div>
+                    <div class="arsenal-item"><i class="fas fa-cube ic-ft"></i> FTK Imager</div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="reveal">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Start a Conversation</h2>
-                    <p>Ready to collaborate on your next investigation or security project?</p>
-                </div>
-                <div style="max-width: 600px; margin: 0 auto; background: var(--card-bg); padding: 3rem; border-radius: 24px; border: 1px solid var(--border);">
-                    <form id="contact-form">
-                        <div style="margin-bottom: 1.5rem;">
-                            <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">Your Name</label>
-                            <input type="text" placeholder="John Doe" style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid var(--border); background: var(--bg-color); color: white; outline: none;">
+        <section id="contact" class="contact-section">
+            <div class="container reveal">
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <h2>Ready to <br><span class="gradient-text">Collaborate?</span></h2>
+                        <p>Seeking opportunities to contribute to complex security investigations and corporate defense teams.</p>
+                        <div class="contact-methods">
+                            <div class="method"><i class="fas fa-envelope"></i> murabula@security.com</div>
+                            <div class="method"><i class="fab fa-linkedin"></i> @elizabeth_murabula</div>
                         </div>
-                        <div style="margin-bottom: 1.5rem;">
-                            <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">Email Address</label>
-                            <input type="email" placeholder="john@example.com" style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid var(--border); background: var(--bg-color); color: white; outline: none;">
-                        </div>
-                        <div style="margin-bottom: 2rem;">
-                            <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">Message</label>
-                            <textarea rows="4" placeholder="How can I help you?" style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid var(--border); background: var(--bg-color); color: white; outline: none;"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-                            Send Message <i class="fas fa-paper-plane"></i>
-                        </button>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <textarea rows="4" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-main">Send Inquiry <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer style="padding: 4rem 0; background: var(--bg-color); border-top: 1px solid var(--border);">
-        <div class="container">
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
-                <a href="#" class="logo">ELIZABETH<span>.</span></a>
-                <p style="color: var(--text-secondary); font-size: 0.9rem;">
-                    &copy; 2026 Elizabeth Murabula. All rights reserved.
-                </p>
-                <div style="display: flex; gap: 1.5rem;">
-                    <a href="#" style="color: var(--text-secondary); font-size: 1.25rem;"><i class="fab fa-github"></i></a>
-                    <a href="#" style="color: var(--text-secondary); font-size: 1.25rem;"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" style="color: var(--text-secondary); font-size: 1.25rem;"><i class="fab fa-twitter"></i></a>
-                </div>
+    <footer class="footer">
+        <div class="container flex-between">
+            <p>&copy; 2026 Elizabeth Murabula. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Custom JS -->
+    <!-- Global Scripts -->
     <script src="js/app.js"></script>
 </body>
 </html>

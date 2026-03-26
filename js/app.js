@@ -1,45 +1,69 @@
+// Initialization
 document.addEventListener('DOMContentLoaded', () => {
-    // Header Scroll Effect
-    const header = document.querySelector('header');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+    initScrollReveal();
+    initNavbarScroll();
+    initFormHandling();
+});
 
-    // Mobile Menu
-    // To be implemented if a mobile menu button is added
-
-    // Reveal Animation on Scroll
+// Scroll Reveal Logic
+function initScrollReveal() {
     const reveals = document.querySelectorAll('.reveal');
+    
     const revealOnScroll = () => {
-        const windowHeight = window.innerHeight;
-        reveals.forEach(el => {
-            const elementTop = el.getBoundingClientRect().top;
-            const elementVisible = 150;
-            if (elementTop < windowHeight - elementVisible) {
-                el.classList.add('active');
+        for (let i = 0; i < reveals.length; i++) {
+            const windowHeight = window.innerHeight;
+            const revealTop = reveals[i].getBoundingClientRect().top;
+            const revealPoint = 150;
+
+            if (revealTop < windowHeight - revealPoint) {
+                reveals[i].classList.add('active');
             }
-        });
+        }
     };
+
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll(); // Initial check
+}
 
-    // Smooth Scroll for Nav Links
-    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
+// Navbar Shadow/Blur on Scroll
+function initNavbarScroll() {
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.style.padding = '1rem 0';
+            navbar.style.background = 'rgba(11, 17, 26, 0.95)';
+            navbar.style.boxShadow = '0 10px 30px -10px rgba(0,0,0,0.5)';
+        } else {
+            navbar.style.padding = '2rem 0';
+            navbar.style.background = 'rgba(11, 17, 26, 0.8)';
+            navbar.style.boxShadow = 'none';
+        }
     });
+}
 
-    // Project Filter (Optional)
-    // Skill Badge Hover Animation (Optional)
-});
+// Simple Form Feedback
+function initFormHandling() {
+    const form = document.querySelector('.contact-form');
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            const originalContent = btn.innerHTML;
+            
+            btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                btn.innerHTML = 'Message Sent! <i class="fas fa-check"></i>';
+                btn.style.background = '#10b981';
+                form.reset();
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalContent;
+                    btn.style.background = '';
+                    btn.disabled = false;
+                }, 3000);
+            }, 1500);
+        });
+    }
+}
