@@ -131,7 +131,7 @@ h1, h2, h3, h4, .gradient-text {
     padding: 0.75rem 1.5rem;
     background: var(--card-bg);
     border: 1px solid var(--border);
-    border-radius: 99px;
+    border-radius: 8px;
     color: var(--text-primary);
     text-decoration: none;
     font-weight: 600;
@@ -162,7 +162,7 @@ h1, h2, h3, h4, .gradient-text {
     background: rgba(0, 180, 216, 0.1);
     border: 1px solid rgba(0, 180, 216, 0.2);
     padding: 0.5rem 1rem;
-    border-radius: 99px;
+    border-radius: 8px;
     font-size: 0.85rem;
     font-weight: 700;
     color: var(--primary);
@@ -204,7 +204,7 @@ h1, h2, h3, h4, .gradient-text {
 
 .btn {
     padding: 0.85rem 2rem;
-    border-radius: 12px;
+    border-radius: 8px;
     font-weight: 700;
     text-decoration: none;
     display: inline-flex;
@@ -247,7 +247,7 @@ h1, h2, h3, h4, .gradient-text {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 40px;
+    border-radius: 8px;
     border: 1px solid var(--border);
     background: var(--card-bg);
 }
@@ -257,7 +257,7 @@ h1, h2, h3, h4, .gradient-text {
     background: rgba(22, 30, 42, 0.8);
     backdrop-filter: blur(20px);
     padding: 1.25rem;
-    border-radius: 20px;
+    border-radius: 8px;
     border: 1px solid var(--border);
     display: flex;
     align-items: center;
@@ -272,7 +272,7 @@ h1, h2, h3, h4, .gradient-text {
     width: 40px;
     height: 40px;
     background: var(--primary);
-    border-radius: 12px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -325,7 +325,7 @@ h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem; letter-spacing: -
 .about-card {
     background: var(--card-bg);
     padding: 3.5rem;
-    border-radius: 32px;
+    border-radius: 8px;
     border: 1px solid var(--border);
     backdrop-filter: blur(12px);
     text-align: left;
@@ -374,7 +374,7 @@ h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem; letter-spacing: -
 
 .p-card {
     background: var(--card-bg);
-    border-radius: 32px;
+    border-radius: 8px;
     overflow: hidden;
     border: 1px solid var(--border);
     backdrop-filter: blur(12px);
@@ -391,33 +391,23 @@ h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem; letter-spacing: -
 
 .p-img-wrapper {
     position: relative;
-    height: 180px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(255,255,255,0.03), transparent);
+    background: linear-gradient(180deg, rgba(0, 210, 255, 0.06) 0%, transparent 100%);
     border-bottom: 1px solid var(--border);
 }
 
 .p-img-wrapper i {
-    font-size: 4rem;
-    background: var(--grad-main);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    filter: drop-shadow(0 0 15px var(--primary-glow));
-    transition: var(--transition);
-}
-
-.p-card:hover .p-img-wrapper i {
-    transform: scale(1.1) rotate(5deg);
-    filter: drop-shadow(0 0 25px var(--primary-glow));
+    font-size: 5rem;
+    color: var(--primary);
 }
 
 .p-overlay {
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+    bottom: 1rem;
+    left: 1.5rem;
 }
 
 .p-tag {
@@ -425,7 +415,7 @@ h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem; letter-spacing: -
     color: var(--primary);
     border: 1px solid rgba(0, 210, 255, 0.2);
     padding: 0.4rem 1.2rem;
-    border-radius: 99px;
+    border-radius: 4px;
     font-size: 0.7rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -467,7 +457,7 @@ h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem; letter-spacing: -
     padding: 1.5rem 2.5rem;
     background: var(--card-bg);
     border: 1px solid var(--border);
-    border-radius: 20px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -488,7 +478,7 @@ h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem; letter-spacing: -
     background: var(--grad-main);
     color: var(--bg-color);
     padding: 6rem;
-    border-radius: 60px;
+    border-radius: 8px;
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 6rem;
@@ -507,7 +497,7 @@ h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem; letter-spacing: -
     padding: 1.25rem;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
+    border-radius: 8px;
     color: var(--bg-color);
     font-family: inherit;
     font-weight: 600;
@@ -540,12 +530,18 @@ h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem; letter-spacing: -
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-    .grid-2, .grid-4, .about-grid, .projects-grid, .contact-box { grid-template-columns: 1fr; }
-    .hero-info h1 { font-size: 3.5rem; }
-    .contact-box { padding: 4rem 2rem; gap: 4rem; }
+    .grid-2, .grid-4, .about-grid, .projects-grid, .contact-box { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hero-info h1 { font-size: 3rem; }
+    .contact-box { padding: 4rem 2rem; gap: 3rem; }
 }
 
 @media (max-width: 768px) {
+    section { padding: 6rem 0; }
     .nav-links, .nav-actions { display: none; }
-    h2 { font-size: 2.5rem; }
+    h2 { font-size: 2.2rem; }
+    .hero-info h1 { font-size: 2.5rem; text-align: center; }
+    .hero-desc { margin: 0 auto 2rem; text-align: center; }
+    .hero-btns { justify-content: center; flex-direction: column; width: 100%; }
+    .btn { width: 100%; justify-content: center; padding: 1rem; font-size: 1rem; }
+    .stat-float { display: none; } /* Clearer mobile hero */
 }
