@@ -351,7 +351,7 @@ h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem; letter-spacing: -
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 3rem;
     margin-top: 6rem;
 }
